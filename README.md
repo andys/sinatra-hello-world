@@ -20,10 +20,17 @@ that with bundler, create a gemfile.
 
 Add the rubygems gem repository and then the sinatra gem. 
 
-    1: source :rubygems
-    2:
-    3: gem 'sinatra'   
+    source :rubygems
+    
+    gem 'sinatra'   
 
+Save the file and add it to the local git repository. 
+
+    :w 
+    :! git add Gemfile
+    :! git commit -am 'adding Gemfile'
+  
 Then push this to Heroku and it should download and install 
 sinatra for you. After that the app should run. 
 
+ 
