@@ -33,4 +33,18 @@ Save the file and add it to the local git repository.
 Then push this to Heroku and it should download and install 
 sinatra for you. After that the app should run. 
 
- 
+You can also run this application locally using the `thin` webserver.
+
+    gem install thin 
+
+Then install the bundle ( including sinatra ) locally. 
+
+    bundle install 
+
+Start the application and visit it at `0.0.0.0:3000`
+
+    thin start
+
+Yippee!!
+
+	
